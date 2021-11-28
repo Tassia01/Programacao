@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jogo.js"></script>
+    <title>Jogo</title>
+</head>
+<body onresize="ajustaTela()">
+    <div class="painel">
+        <div class="vidas">
+            <img class="img-coracao" id="c1" src="img/coracao-cheio.png" alt="coração vazio">
+            <img class="img-coracao" id="c2" src="img/coracao-cheio.png" alt="coração cheio">
+            <img class="img-coracao" id="c3" src="img/coracao-cheio.png" alt="coração cheio">
+        </div>
+        <div class="tempo">
+            Tempo restante: <span id="tempo"></span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('tempo').innerHTML = t;
+        posicaoR();
+        var criaPanda = setInterval(function(){
+            posicaoR()
+        }, PandaTempo)
+    </script>
+</body>
+</html>

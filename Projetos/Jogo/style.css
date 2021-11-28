@@ -1,0 +1,55 @@
+html{
+    cursor: url(img/guaxinim.png) 30 30, auto;
+}
+body{
+    background-image: url(img/paisagem-jogo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.img-game{
+    width: 500;
+    height: 500;
+}
+.bicho1{
+    width: 70px;
+    height: 70px;
+}
+.bicho2{
+    width: 60px;
+    height: 60px;
+}
+.bicho3{
+    width: 95px;
+    height: 95px;
+}
+.ladoA{
+    transform: scaleX(1);
+}
+.ladoB{
+    transform: scaleX(-1);
+}
+.painel{
+    position: absolute;
+    width: 230px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1px #4f4f59;
+    background: linear-gradient(#4f4f59, pink);
+    border-radius: 5px;
+}
+.vidas{
+    float: left;
+}
+.tempo{
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.img-coracao{
+    width: 35px;
+    height: 28;
+}
+
+
