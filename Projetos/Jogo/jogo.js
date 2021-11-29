@@ -28,13 +28,13 @@ var cronometro = setInterval(function(){
 window.location.search
 var nivel = nivel.replace('?', '');
 if (nivel === 'facil') {
-    //1500
-    PandaTempo = 1500;
+    //2500
+    PandaTempo = 3000;
 }else if(nivel === 'normal'){
     //1000
     PandaTempo = 1000;
 }else if(nivel === 'dificil'){
-    //750
+    //550
     PandaTempo = 550;
 }
 
