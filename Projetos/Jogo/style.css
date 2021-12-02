@@ -1,5 +1,7 @@
+@charset "utf-8";
+
 html{
-    cursor: url(img/guaxinim.png) 30 30, auto;
+    cursor: url(img/mouse.png) 30 30, grab;
 }
 body{
     background-image: url(img/paisagem-jogo.svg);
@@ -11,12 +13,12 @@ body{
     height: 500;
 }
 .bicho1{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 .bicho2{
-    width: 60px;
-    height: 60px;
+    width: 68px;
+    height: 68px;
 }
 .bicho3{
     width: 95px;

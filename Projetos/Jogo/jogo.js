@@ -2,7 +2,20 @@ var largura = 0;
 var altura = 0;
 var vidas = 1;
 var t = 30;
-var PandaTempo = 1500;
+var PandaTempo = 1800;
+//tratativa para não aparecer a ?, apenas o nível
+var nivel = window.location.search
+nivel = nivel.replace('?', '');
+if (nivel === 'facil') {
+    //2500
+    PandaTempo = 1800;
+}else if(nivel === 'normal'){
+    //1000
+    PandaTempo = 1300;
+}else if(nivel === 'dificil'){
+    //650
+    PandaTempo = 750;
+}
 
 //Ajustando o tamanho da tela
 function ajustaTela() {
@@ -20,23 +33,9 @@ var cronometro = setInterval(function(){
         window.location.href = 'vitoria.html';
     }
     else{
-    document.getElementById('tempo').innerHTML = t;
+        document.getElementById('tempo').innerHTML = t;
     }   
 }, 1000);
-
-//tratativa para não aparecer a ?, apenas o nível
-window.location.search
-var nivel = nivel.replace('?', '');
-if (nivel === 'facil') {
-    //2500
-    PandaTempo = 3000;
-}else if(nivel === 'normal'){
-    //1000
-    PandaTempo = 1000;
-}else if(nivel === 'dificil'){
-    //550
-    PandaTempo = 550;
-}
 
 function posicaoR(){
     //remove bicho anterior da tela (caso exista)
